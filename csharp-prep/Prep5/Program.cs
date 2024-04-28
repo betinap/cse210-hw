@@ -8,6 +8,7 @@ class Program
             DisplayWelcome();
             string userName = PromptUserName();
             int userNumber = PromptUserNumber();
+            int squareNumber = squareNumber(userNumber);
         }
    
         static void DisplayWelcome()
@@ -27,6 +28,12 @@ class Program
             Console.Write("Please enter your favorite number: ");
             int number = int.Parse(Console.ReadLine());
             return number;
+        }
+
+        static int SquareNumber(int number)
+        {
+            int square = number * number;
+            return square;
         }
 
 
