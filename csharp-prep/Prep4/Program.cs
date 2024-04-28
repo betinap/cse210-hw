@@ -34,5 +34,8 @@ class Program
         double average = numbers.Average();
         Console.WriteLine($"The average is: {average}");
 
+        int max = numbers.Max();
+        Console.WriteLine($"The largest number is: {max}");
+
     }
 }
