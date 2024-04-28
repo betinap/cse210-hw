@@ -19,13 +19,17 @@ class Program
             {               
                 numbers.Add(number);
             }
-        } while (number !=0);  
+        } while (number !=0); 
 
+        Console.WriteLine(" ");
         Console.WriteLine("Enter a number (0 to quit)");
         foreach (int num in numbers)
         {
             Console.WriteLine($"Enter number: {num}");
         }
+
+        int sum = numbers.Sum();
+        Console.Write($"The sum is: {sum}");
 
     }
 }
