@@ -22,14 +22,17 @@ class Program
         } while (number !=0); 
 
         Console.WriteLine(" ");
-        Console.WriteLine("Enter a number (0 to quit)");
+        Console.WriteLine("Enter a list of numbers, type 0 to quit).");
         foreach (int num in numbers)
         {
             Console.WriteLine($"Enter number: {num}");
         }
 
         int sum = numbers.Sum();
-        Console.Write($"The sum is: {sum}");
+        Console.WriteLine($"The sum is: {sum}");
+
+        double average = numbers.Average();
+        Console.WriteLine($"The average is: {average}");
 
     }
 }
