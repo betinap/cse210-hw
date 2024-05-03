@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Create a job instance.
+        //Create a new job instance.
         Job job1 = new Job();
         //Set the member variables and method.
         job1._jobTitle = "Food Production Manager";
